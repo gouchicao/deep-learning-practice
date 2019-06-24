@@ -1,11 +1,7 @@
 # Summary
 
-* [About](./README.md)
+* [深度学习实践](./README.md)
 
-## 第一章
-
-* [1-1](./chap01/1-1.md)
-
-## 第二章
-
-* [2-1](./chap02/2-1.md)
+## [1. 部署模型](./chapter_deploy-model/index.md)
+* [1.1 REST接口服务](./chapter_deploy-model/rest-api.md)
+* [1.2 gRPC接口服务](./chapter_deploy-model/grpc-api.md)
