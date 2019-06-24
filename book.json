@@ -41,7 +41,7 @@
       }]
     },
     "editlink": {
-      "base": "https://github.com/wang-junjian/deeplearning-practice/blob/master",
+      "base": "https://github.com/gouchicao/deep-learning-practice/blob/master",
       "label": "Edit",
       "multilingual": false
     },
