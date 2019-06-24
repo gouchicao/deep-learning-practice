@@ -1,6 +1,6 @@
 {
   "title": "深度学习实践",
-  "author": "",
+  "author": "王军建 <wang-junjian@qq.com>",
   "plugins": [
     "-lunr",
     "-search",
