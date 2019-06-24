@@ -31,4 +31,4 @@ branches:
 
 env:
   global:
-    - REF=github.com/wang-junjian/deeplearning-practice.git # 设置 github 地址
+    - REF=github.com/gouchicao/deep-learning-practice.git # 设置 github 地址
