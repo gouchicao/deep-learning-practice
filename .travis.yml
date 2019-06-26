@@ -12,10 +12,12 @@ notifications:
 
 install:
   - npm install -g gitbook-cli
+  - npm install -g gitbook-pdf
   - gitbook install
 
 script:
   - gitbook build
+  - gitbook pdf .
 
 after_script:
   - cd _book
