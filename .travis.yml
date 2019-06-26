@@ -13,11 +13,9 @@ notifications:
 install:
   - npm install -g gitbook-cli
   - gitbook install
-  - wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sh /dev/stdin
 
 script:
   - gitbook build
-  - gitbook pdf . deep-learning-practice.pdf
 
 after_script:
   - cd _book
