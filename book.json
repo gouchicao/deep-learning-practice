@@ -9,7 +9,6 @@
     "disqus",
     "github-buttons",
     "editlink",
-    "ga",
     "-highlight",
     "prism",
     "bibtex-indexed-cite",
@@ -44,9 +43,6 @@
       "base": "https://github.com/gouchicao/deep-learning-practice/blob/master",
       "label": "Edit",
       "multilingual": false
-    },
-    "ga": {
-      "token": "UA-131910384-3"
     },
     "prism": {
       "ignore": [
