@@ -7,4 +7,5 @@
     * [gRPC服务](chapter_deploy-model/grpc-service.md)
 
 * [Docker](chapter_docker/README.md)
+    * [基础知识](chapter_docker/basic-knowledge.md)
     * [Dockerfile](chapter_docker/dockerfile.md)
