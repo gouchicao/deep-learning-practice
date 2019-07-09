@@ -147,3 +147,86 @@ $ cat /etc/profile | more
 ```bash
 $ chgrp wjj test.txt
 ```
+
+## 软件管理
+
+### 软件包管理器
+* 配置源
+```bash
+$ nano /etc/apt/sources.list
+```
+
+* 更新软件列表
+```bash
+$ apt-get update
+```
+
+* 搜索软件
+```bash
+$ apt-cache search vim
+```
+
+* 安装软件
+```bash
+$ apt-get install vim
+```
+
+* 删除软件
+```bash
+$ apt-get purge vim
+```
+
+* 更新软件
+```bash
+$ apt-get upgrade
+```
+
+### 软件包安装
+* 下载
+```bash
+$ apt-get install -d nano
+```
+
+* 安装
+```bash
+$ dpkg -i nano_2.9.3-2_amd64.deb
+```
+
+* 查找安装的软件
+```bash
+$ dpkg -l | grep nano
+```
+
+* 删除
+```bash
+$ dpkg -r nano
+```
+
+* 显示安装的软件
+```bash
+$ dpkg -l
+```
+
+### 环境变量
+* ~/.bashrc 配置完后，需要关闭当前控制台，以后打开的新控制台，配置就会起作用。
+* /etc/profile 修改完文件后，运行source /etc/profile方可生效。
+
+* 显示环境变量
+    * 所有环境变量
+    ```bash
+    $ env
+    ```
+    * 指定环境变量
+    ```bash
+    $ echo $HOSTNAME
+    ```
+
+* 设置环境变量
+```bash
+$ export PYTHONPATH=$PYTHONPATH:`pwd`
+```
+
+* 移除环境变量
+```bash
+$ unset PYTHONPATH
+```
