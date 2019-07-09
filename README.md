@@ -7,6 +7,7 @@
     * [gRPC服务](chapter_deploy-model/grpc-service.md)
 
 * Linux
+    * [基础知识](chapter_linux/basic-knowledge.md)
     * [内网安装深度学习环境](chapter_linux/intranet-installation-deep-learning-environment.md)
     
 * Docker
