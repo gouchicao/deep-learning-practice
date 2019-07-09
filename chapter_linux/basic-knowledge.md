@@ -1,5 +1,24 @@
 # Linux 基础知识
 
+## 用户管理
+
+### 添加用户
+* 不指定组将创建和用户名一样的组
+```bash
+$ useradd username
+```
+
+* 创建用户指定组
+```bash
+$ useradd username -g root
+```
+
+### 修改密码
+* 非root用户只能给自己修改密码
+```bash
+$ passwd
+```
+
 ## 文件管理
 
 ### 文件
@@ -257,7 +276,24 @@ $ export PYTHONPATH=$PYTHONPATH:`pwd`
 $ unset PYTHONPATH
 ```
 
-## 服务service
+## 程序
+
+### 命令command
+* 执行Shell程序
+    * 执行当前目录下的命令
+    ```bash
+    $ ./command
+    ```
+    * 执行PATH中路径下的命令
+    ```bash
+    $ command
+    ```
+* 后台执行
+```bash
+$ nohup command &
+```
+
+### 服务service
 * 启动服务
 ```bash
 $ service ssh start
@@ -288,18 +324,54 @@ $ update-rc.d ssh enable
 $ update-rc.d ssh disable
 ```
 
-## 执行程序
-* 执行Shell程序
-    * 执行当前目录下的命令
+## 网络
+
+### 下载
+* wget
+    * 下载文件
     ```bash
-    $ ./command
+    $ wget http://www.163.com/index.html
     ```
-    * 执行PATH中路径下的命令
+    * 下载文件指定保存文件名
     ```bash
-    $ command
+    $ wget http://www.163.com/index.html -O index.html
     ```
-* 后台执行
+    * 下载文件内容输出到标准窗口
+    ```bash
+    $ wget http://www.163.com/index.html -O -
+    ```
+
+* curl
+    * 下载文件内容输出到标准窗口
+    ```bash
+    $ curl http://www.163.com/index.html
+    ```
+    * 下载文件
+    ```bash
+    $ curl http://www.163.com/index.html -O
+    ```
+    * 下载文件指定保存文件名
+    ```bash
+    $ curl http://www.163.com/index.html -o index.html
+    ```
+### 远程控制
+* 连接
 ```bash
-$ nohup command &
+$ ssh username@ip
+$ ssh username@ip -p 22
 ```
+
+* 复制
+    * 拷贝远程文件到本地
+    ```bash
+    $ scp lnsoft@172.16.33.32:/etc/vimrc ./
+    ```
+    * 拷贝本地文件到远程
+    ```bash
+    $ scp /etc/vimrc lnsoft@172.16.33.32:/etc/
+    ```
+
+* 断开
+> 1. closing the shell session, e.g. with `exit` followed by Enter, or `Ctrl-d` usually allows you to exit the ssh session normally.
+> 2. in the case where you have a bad connection and the shell is unresponsive, hit the Enter key, then type `~.` and ssh should immediately close and return you to your command prompt.
 
