@@ -287,3 +287,19 @@ $ update-rc.d ssh enable
 ```bash
 $ update-rc.d ssh disable
 ```
+
+## 执行程序
+* 执行Shell程序
+    * 执行当前目录下的命令
+    ```bash
+    $ ./command
+    ```
+    * 执行PATH中路径下的命令
+    ```bash
+    $ command
+    ```
+* 后台执行
+```bash
+$ nohup command &
+```
+
