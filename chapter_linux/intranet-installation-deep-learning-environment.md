@@ -21,7 +21,8 @@ $ dpkg -i *.deb
 * 查看gcc的依赖
 ```bash
 $ apt-get install -s gcc
-
+```
+```
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
