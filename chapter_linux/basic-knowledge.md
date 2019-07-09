@@ -207,6 +207,32 @@ $ dpkg -r nano
 $ dpkg -l
 ```
 
+### tar
+* 打包
+    * 打包（不压缩）
+    ```bash
+    $ tar -cvf filename.tar filename
+    ```
+    * 创建压缩包
+    ```bash
+    $ tar -zcvf filename.tar filename
+    ```
+
+* 解包
+    * 解包（不压缩）
+    ```bash
+    $ tar -xvf filename.tar
+    ```
+    * 解压缩包
+    ```bash
+    $ tar -zxvf filename.tar
+    ```
+
+* 列出包的所有内容
+```bash
+$ tar -tf filename.tar
+```
+
 ### 环境变量
 * ~/.bashrc 配置完后，需要关闭当前控制台，以后打开的新控制台，配置就会起作用。
 * /etc/profile 修改完文件后，运行source /etc/profile方可生效。
@@ -229,4 +255,35 @@ $ export PYTHONPATH=$PYTHONPATH:`pwd`
 * 移除环境变量
 ```bash
 $ unset PYTHONPATH
+```
+
+## 服务service
+* 启动服务
+```bash
+$ service ssh start
+```
+
+* 查看服务状态
+```bash
+$ service ssh status
+```
+
+* 停止服务
+```bash
+$ service ssh stop
+```
+
+* 重启服务
+```bash
+$ service ssh restart
+```
+
+* 设置开机自启动
+```bash
+$ update-rc.d ssh enable
+```
+
+* 设置开机不自启动
+```bash
+$ update-rc.d ssh disable
 ```
