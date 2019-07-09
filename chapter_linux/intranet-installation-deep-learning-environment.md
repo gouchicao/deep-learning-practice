@@ -123,14 +123,14 @@ dpkg -i *.deb
 ## 安装Nvidia GPU驱动
 * 禁⽤nouveau驱动
 ```bash
-# 编辑配置文件
+#编辑配置文件
 $ nano /etc/modprobe.d/blacklist-nouveau.conf 
-# 增加下面内容 
+#增加下面内容 
 blacklist nouveau
 options nouveau modeset=0
-# 保存退出
+#保存退出
 
-# 让配置内容生效
+#让配置内容生效
 $ sudo update-initramfs -u 
 ```
 
@@ -141,7 +141,7 @@ $ reboot
 
 * 验证禁用nouveau驱动是否成功
 ```bash
-# 查看没有任何信息，代表禁⽤成功
+#查看没有任何信息，代表禁⽤成功
 $ lsmod | grep nouveau 
 ```
 
