@@ -5,6 +5,22 @@
 $ sudo docker images
 ```
 
+## 删除镜像
+* 删除
+```bash
+$ sudo docker rmi busybox:latest
+```
+
+* 强制删除
+```bash
+$ sudo docker rmi -f busybox:latest
+```
+
+* 删除所有的名字为<none>的镜像
+```bash
+$ sudo docker rmi $(sudo docker images -f dangling=true -q)
+```
+
 ## 运行容器
 * 命令行交互运行
 ```bash
