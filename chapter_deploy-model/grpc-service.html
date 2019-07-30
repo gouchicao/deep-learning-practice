@@ -1,0 +1,474 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>gRPC服务 · 深度学习实践</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="王军建 <wang-junjian@qq.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-bibtex-indexed-cite/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="rest-service.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"gouchicao","repo":"deep-learning-practice","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    深度学习实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    部署模型
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="rest-service.html">
+            
+                <a href="rest-service.html">
+            
+                    
+                    REST服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="grpc-service.html">
+            
+                <a href="grpc-service.html">
+            
+                    
+                    gRPC服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Linux
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter_linux/basic-knowledge.html">
+            
+                <a href="../chapter_linux/basic-knowledge.html">
+            
+                    
+                    基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter_linux/intranet-installation-deep-learning-environment.html">
+            
+                <a href="../chapter_linux/intranet-installation-deep-learning-environment.html">
+            
+                    
+                    内网安装深度学习环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Docker
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter_docker/basic-knowledge.html">
+            
+                <a href="../chapter_docker/basic-knowledge.html">
+            
+                    
+                    基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter_docker/dockerfile.html">
+            
+                <a href="../chapter_docker/dockerfile.html">
+            
+                    
+                    Dockerfile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter_docker/experience.html">
+            
+                <a href="../chapter_docker/experience.html">
+            
+                    
+                    实践经验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >gRPC服务</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#grpc&#x670D;&#x52A1;"><b></b>gRPC&#x670D;&#x52A1;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5B89;&#x88C5;grpc&#x548C;protoc&#x7B49;"><b></b>&#x5B89;&#x88C5;gRPC&#x548C;protoc&#x7B49;</a></li><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;protocol-buffer&#x5B9A;&#x4E49;&#x63A5;&#x53E3;"><b></b>&#x4F7F;&#x7528;protocol buffer&#x5B9A;&#x4E49;&#x63A5;&#x53E3;</a></li><ul><li><span class="title-icon "></span><a href="#objectdetectionproto"><b></b>object_detection.proto</a></li></ul><li><span class="title-icon "></span><a href="#&#x751F;&#x6210;grpc&#x4EE3;&#x7801;"><b></b>&#x751F;&#x6210;gRPC&#x4EE3;&#x7801;</a></li><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;&#x8D44;&#x6599;"><b></b>&#x53C2;&#x8003;&#x8D44;&#x6599;</a></li></ul></ul></div><a href="#grpc&#x670D;&#x52A1;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="grpc&#x670D;&#x52A1;"><a name="grpc&#x670D;&#x52A1;" class="anchor-navigation-ex-anchor" href="#grpc&#x670D;&#x52A1;"><i class="fa fa-link" aria-hidden="true"></i></a>gRPC&#x670D;&#x52A1;</h1>
+<blockquote>
+<p>&#x57FA;&#x4E8E;Python&#x8BED;&#x8A00;&#x7684;&#x5F00;&#x53D1;</p>
+</blockquote>
+<h2 id="&#x5B89;&#x88C5;grpc&#x548C;protoc&#x7B49;"><a name="&#x5B89;&#x88C5;grpc&#x548C;protoc&#x7B49;" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x88C5;grpc&#x548C;protoc&#x7B49;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88C5;gRPC&#x548C;protoc&#x7B49;</h2>
+<pre class="language-"><code class="lang-bash">$ <span class="token function">sudo</span> python3 -m pip <span class="token function">install</span> grpcio
+$ <span class="token function">sudo</span> python3 -m pip <span class="token function">install</span> grpcio-tools
+</code></pre>
+<h2 id="&#x4F7F;&#x7528;protocol-buffer&#x5B9A;&#x4E49;&#x63A5;&#x53E3;"><a name="&#x4F7F;&#x7528;protocol-buffer&#x5B9A;&#x4E49;&#x63A5;&#x53E3;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;protocol-buffer&#x5B9A;&#x4E49;&#x63A5;&#x53E3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;protocol buffer&#x5B9A;&#x4E49;&#x63A5;&#x53E3;</h2>
+<h3 id="objectdetectionproto"><a name="objectdetectionproto" class="anchor-navigation-ex-anchor" href="#objectdetectionproto"><i class="fa fa-link" aria-hidden="true"></i></a>object_detection.proto</h3>
+<pre class="language-"><code>syntax = &quot;proto3&quot;;
+
+//darknet yolov3 object detection
+service ObjectDetection {
+  //&#x5BA2;&#x6237;&#x7AEF;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x7684;&#x6D41;&#x5F0F;RPC
+  //&#x5BF9;&#x56FE;&#x50CF;&#x7684;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x5BF9;&#x8C61;&#x68C0;&#x6D4B;
+  rpc detect (stream UploadImageRequest) returns (DetectResponse) {}
+}
+
+//&#x4E0A;&#x4F20;&#x56FE;&#x50CF;&#x6570;&#x636E;&#x5757;
+message UploadImageRequest {
+  bytes data_block = 1;
+}
+
+//&#x8FD4;&#x56DE;&#x5BF9;&#x8C61;&#x68C0;&#x6D4B;&#x7ED3;&#x679C;
+message DetectResponse {
+  repeated Object object = 1;
+}
+
+//&#x5BF9;&#x8C61;&#x7684;&#x8FB9;&#x6846;
+message Rectangle {
+  int32 x = 1;
+  int32 y = 2;
+  int32 w = 3;
+  int32 h = 4;
+}
+
+//&#x68C0;&#x6D4B;&#x51FA;&#x7684;&#x5BF9;&#x8C61;
+message Object {
+  string name = 1;
+  float confidence = 2;
+  Rectangle rectangle = 3;
+}
+</code></pre><ul>
+<li>gRPC&#x9ED8;&#x8BA4;&#x6700;&#x5927;&#x6D88;&#x606F;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;4MB&#x3002;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x4E86;&#x5BA2;&#x6237;&#x7AEF;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x7684;&#x6D41;&#x5F0F;RPC&#x65B9;&#x5F0F;&#x5BF9;&#x4E0A;&#x4F20;&#x7684;&#x56FE;&#x50CF;&#x8FDB;&#x884C;&#x4F20;&#x8F93;&#x3002;</li>
+</ul>
+<h2 id="&#x751F;&#x6210;grpc&#x4EE3;&#x7801;"><a name="&#x751F;&#x6210;grpc&#x4EE3;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x751F;&#x6210;grpc&#x4EE3;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x751F;&#x6210;gRPC&#x4EE3;&#x7801;</h2>
+<pre class="language-"><code class="lang-bash">$ python3 -m grpc_tools.protoc -I. --python_out<span class="token operator">=</span>. --grpc_python_out<span class="token operator">=</span>. object_detection.proto
+</code></pre>
+<h2 id="&#x53C2;&#x8003;&#x8D44;&#x6599;"><a name="&#x53C2;&#x8003;&#x8D44;&#x6599;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;&#x8D44;&#x6599;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;&#x8D44;&#x6599;</h2>
+<p><a href="https://grpc.io/docs/quickstart/python/" target="_blank">Python Quick Start</a></p>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> By <a href="https://github.com/gouchicao" target="_blank">&#x72D7;&#x5403;&#x8349;</a>&#xFF0C;&#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">&#x77E5;&#x8BC6;&#x5171;&#x4EAB; &#x7F72;&#x540D;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB; 4.0&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03; </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2019-07-30 17:27:31 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="rest-service.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: REST服务">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"gRPC服务","level":"1.2.2","depth":2,"next":{"title":"Linux","level":"1.3","depth":1,"ref":"","articles":[{"title":"基础知识","level":"1.3.1","depth":2,"path":"chapter_linux/basic-knowledge.md","ref":"chapter_linux/basic-knowledge.md","articles":[]},{"title":"内网安装深度学习环境","level":"1.3.2","depth":2,"path":"chapter_linux/intranet-installation-deep-learning-environment.md","ref":"chapter_linux/intranet-installation-deep-learning-environment.md","articles":[]}]},"previous":{"title":"REST服务","level":"1.2.1","depth":2,"path":"chapter_deploy-model/rest-service.md","ref":"chapter_deploy-model/rest-service.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-sharing","disqus","github-buttons","editlink","-highlight","prism","bibtex-indexed-cite","anchor-navigation-ex","page-footer-ex","splitter","todo","copy-code-button","expandable-chapters-small"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"ignore":["mermaid","eval-js"],"css":["prismjs/themes/prism-solarizedlight.css"]},"disqus":{"useIdentifier":false,"shortName":"深度学习实践"},"editlink":{"label":"Edit","multilingual":false,"base":"https://github.com/gouchicao/deep-learning-practice/blob/master"},"todo":{},"page-footer-ex":{"copyright":"By [狗吃草](https://github.com/gouchicao)，使用[知识共享 署名-相同方式共享 4.0协议](https://creativecommons.org/licenses/by-sa/4.0/)发布","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"此页面修订于："},"splitter":{},"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook Use"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"bibtex-indexed-cite":{"path":"/"},"github-buttons":{"buttons":[{"user":"gouchicao","repo":"deep-learning-practice","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"王军建 <wang-junjian@qq.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"bibCount":0,"variables":{},"title":"深度学习实践","bib":[],"gitbook":"*"},"file":{"path":"chapter_deploy-model/grpc-service.md","mtime":"2019-07-30T17:27:31.738Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-30T17:28:44.542Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-editlink/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,481 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>REST服务 · 深度学习实践</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="王军建 <wang-junjian@qq.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-bibtex-indexed-cite/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="grpc-service.html" />
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"gouchicao","repo":"deep-learning-practice","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    深度学习实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    部署模型
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="rest-service.html">
+            
+                <a href="rest-service.html">
+            
+                    
+                    REST服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="grpc-service.html">
+            
+                <a href="grpc-service.html">
+            
+                    
+                    gRPC服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Linux
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter_linux/basic-knowledge.html">
+            
+                <a href="../chapter_linux/basic-knowledge.html">
+            
+                    
+                    基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter_linux/intranet-installation-deep-learning-environment.html">
+            
+                <a href="../chapter_linux/intranet-installation-deep-learning-environment.html">
+            
+                    
+                    内网安装深度学习环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Docker
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter_docker/basic-knowledge.html">
+            
+                <a href="../chapter_docker/basic-knowledge.html">
+            
+                    
+                    基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter_docker/dockerfile.html">
+            
+                <a href="../chapter_docker/dockerfile.html">
+            
+                    
+                    Dockerfile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter_docker/experience.html">
+            
+                <a href="../chapter_docker/experience.html">
+            
+                    
+                    实践经验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >REST服务</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#rest&#x670D;&#x52A1;"><b></b>REST&#x670D;&#x52A1;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5B89;&#x88C5;&#x4F9D;&#x8D56;&#x5305;"><b></b>&#x5B89;&#x88C5;&#x4F9D;&#x8D56;&#x5305;</a></li><li><span class="title-icon "></span><a href="#&#x4E0A;&#x4F20;&#x56FE;&#x7247;"><b></b>&#x4E0A;&#x4F20;&#x56FE;&#x7247;</a></li><li><span class="title-icon "></span><a href="#curl&#x6D4B;&#x8BD5;"><b></b>curl&#x6D4B;&#x8BD5;</a></li><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;&#x8D44;&#x6599;"><b></b>&#x53C2;&#x8003;&#x8D44;&#x6599;</a></li></ul></ul></div><a href="#rest&#x670D;&#x52A1;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="rest&#x670D;&#x52A1;"><a name="rest&#x670D;&#x52A1;" class="anchor-navigation-ex-anchor" href="#rest&#x670D;&#x52A1;"><i class="fa fa-link" aria-hidden="true"></i></a>REST&#x670D;&#x52A1;</h1>
+<blockquote>
+<p>&#x57FA;&#x4E8E;Python&#x8BED;&#x8A00;&#x7684;&#x5F00;&#x53D1;</p>
+</blockquote>
+<h2 id="&#x5B89;&#x88C5;&#x4F9D;&#x8D56;&#x5305;"><a name="&#x5B89;&#x88C5;&#x4F9D;&#x8D56;&#x5305;" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x88C5;&#x4F9D;&#x8D56;&#x5305;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88C5;&#x4F9D;&#x8D56;&#x5305;</h2>
+<pre class="language-"><code class="lang-bash">pip <span class="token function">install</span> flask
+pip <span class="token function">install</span> flask_restful
+</code></pre>
+<h2 id="&#x4E0A;&#x4F20;&#x56FE;&#x7247;"><a name="&#x4E0A;&#x4F20;&#x56FE;&#x7247;" class="anchor-navigation-ex-anchor" href="#&#x4E0A;&#x4F20;&#x56FE;&#x7247;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E0A;&#x4F20;&#x56FE;&#x7247;</h2>
+<pre class="language-"><code class="lang-py"><span class="token keyword">import</span> tempfile
+<span class="token keyword">import</span> werkzeug
+
+<span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask
+<span class="token keyword">from</span> flask_restful <span class="token keyword">import</span> reqparse<span class="token punctuation">,</span> abort<span class="token punctuation">,</span> Api<span class="token punctuation">,</span> Resource
+
+
+<span class="token keyword">class</span> <span class="token class-name">UploadImage</span><span class="token punctuation">(</span>Resource<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">post</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        parse <span class="token operator">=</span> reqparse<span class="token punctuation">.</span>RequestParser<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        parse<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">&apos;file&apos;</span><span class="token punctuation">,</span> <span class="token builtin">type</span><span class="token operator">=</span>werkzeug<span class="token punctuation">.</span>datastructures<span class="token punctuation">.</span>FileStorage<span class="token punctuation">,</span> location<span class="token operator">=</span><span class="token string">&apos;files&apos;</span><span class="token punctuation">)</span>
+        args <span class="token operator">=</span> parse<span class="token punctuation">.</span>parse_args<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        img_file <span class="token operator">=</span> args<span class="token punctuation">[</span><span class="token string">&apos;file&apos;</span><span class="token punctuation">]</span>
+
+        <span class="token keyword">if</span> <span class="token keyword">not</span> img_file<span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token string">&apos;no file&apos;</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">417</span>
+
+        <span class="token keyword">with</span> tempfile<span class="token punctuation">.</span>NamedTemporaryFile<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+            img_data <span class="token operator">=</span> args<span class="token punctuation">[</span><span class="token string">&apos;file&apos;</span><span class="token punctuation">]</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            f<span class="token punctuation">.</span>write<span class="token punctuation">(</span>img_data<span class="token punctuation">)</span>
+
+        <span class="token keyword">return</span> detect_result<span class="token punctuation">,</span> <span class="token number">201</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">&apos;__main__&apos;</span><span class="token punctuation">:</span>
+    app <span class="token operator">=</span> Flask<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span>
+    api <span class="token operator">=</span> Api<span class="token punctuation">(</span>app<span class="token punctuation">)</span>
+
+    api<span class="token punctuation">.</span>add_resource<span class="token punctuation">(</span>UploadImage<span class="token punctuation">,</span> <span class="token string">&apos;/upload_image&apos;</span><span class="token punctuation">)</span>
+
+    app<span class="token punctuation">.</span>run<span class="token punctuation">(</span>host<span class="token operator">=</span><span class="token number">0.0</span><span class="token number">.0</span><span class="token number">.0</span><span class="token punctuation">,</span> debug<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="curl&#x6D4B;&#x8BD5;"><a name="curl&#x6D4B;&#x8BD5;" class="anchor-navigation-ex-anchor" href="#curl&#x6D4B;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a>curl&#x6D4B;&#x8BD5;</h2>
+<pre class="language-"><code class="lang-bash"><span class="token function">curl</span> -v -X POST -H <span class="token string">&quot;Content-Type: multipart/form-data&quot;</span> -F <span class="token string">&quot;file=@test.jpg&quot;</span> http://127.0.0.1:5000/upload_image
+</code></pre>
+<h2 id="&#x53C2;&#x8003;&#x8D44;&#x6599;"><a name="&#x53C2;&#x8003;&#x8D44;&#x6599;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;&#x8D44;&#x6599;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;&#x8D44;&#x6599;</h2>
+<ul>
+<li><a href="https://github.com/flask-restful/flask-restful" target="_blank">flask-restful</a></li>
+<li><a href="https://flask-restful.readthedocs.io/en/latest/" target="_blank">Flask-RESTful User&#x2019;s Guide</a></li>
+<li><a href="http://www.pythondoc.com/flask-restful/first.html" target="_blank">&#x4F7F;&#x7528; Python &#x548C; Flask &#x8BBE;&#x8BA1; RESTful API</a></li>
+<li><a href="http://www.pythondoc.com/flask-restful/second.html" target="_blank">&#x4F7F;&#x7528; Flask-RESTful &#x8BBE;&#x8BA1; RESTful API</a></li>
+<li><a href="http://www.pythondoc.com/flask-restful/third.html" target="_blank">&#x4F7F;&#x7528; Flask &#x8BBE;&#x8BA1; RESTful &#x7684;&#x8BA4;&#x8BC1;</a></li>
+<li><a href="http://www.pythondoc.com/Flask-RESTful/quickstart.html" target="_blank">Flask-RESTful&#x5FEB;&#x901F;&#x5165;&#x95E8;</a></li>
+<li><a href="https://www.jianshu.com/p/81cd461c7e8f" target="_blank">&#x4F7F;&#x7528; Flask-RESTful &#x8BBE;&#x8BA1; RESTful API</a></li>
+<li><a href="https://www.itread01.com/content/1547562072.html" target="_blank">flask&#x5831;&#x932F;No module named &apos;flask.ext&apos;</a></li>
+<li><a href="https://stackoverflow.com/questions/28982974/flask-restful-upload-image" target="_blank">Flask-RESTful Upload Image</a></li>
+<li><a href="https://github.com/flask-restful/flask-restful/issues/485" target="_blank">Question on File Upload in Restful Flask</a></li>
+</ul>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> By <a href="https://github.com/gouchicao" target="_blank">&#x72D7;&#x5403;&#x8349;</a>&#xFF0C;&#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">&#x77E5;&#x8BC6;&#x5171;&#x4EAB; &#x7F72;&#x540D;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB; 4.0&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03; </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2019-07-30 17:27:31 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="grpc-service.html" class="navigation navigation-next navigation-unique" aria-label="Next page: gRPC服务">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"REST服务","level":"1.2.1","depth":2,"next":{"title":"gRPC服务","level":"1.2.2","depth":2,"path":"chapter_deploy-model/grpc-service.md","ref":"chapter_deploy-model/grpc-service.md","articles":[]},"previous":{"title":"部署模型","level":"1.2","depth":1,"ref":"","articles":[{"title":"REST服务","level":"1.2.1","depth":2,"path":"chapter_deploy-model/rest-service.md","ref":"chapter_deploy-model/rest-service.md","articles":[]},{"title":"gRPC服务","level":"1.2.2","depth":2,"path":"chapter_deploy-model/grpc-service.md","ref":"chapter_deploy-model/grpc-service.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-sharing","disqus","github-buttons","editlink","-highlight","prism","bibtex-indexed-cite","anchor-navigation-ex","page-footer-ex","splitter","todo","copy-code-button","expandable-chapters-small"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"ignore":["mermaid","eval-js"],"css":["prismjs/themes/prism-solarizedlight.css"]},"disqus":{"useIdentifier":false,"shortName":"深度学习实践"},"editlink":{"label":"Edit","multilingual":false,"base":"https://github.com/gouchicao/deep-learning-practice/blob/master"},"todo":{},"page-footer-ex":{"copyright":"By [狗吃草](https://github.com/gouchicao)，使用[知识共享 署名-相同方式共享 4.0协议](https://creativecommons.org/licenses/by-sa/4.0/)发布","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"此页面修订于："},"splitter":{},"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook Use"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"bibtex-indexed-cite":{"path":"/"},"github-buttons":{"buttons":[{"user":"gouchicao","repo":"deep-learning-practice","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"王军建 <wang-junjian@qq.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"bibCount":0,"variables":{},"title":"深度学习实践","bib":[],"gitbook":"*"},"file":{"path":"chapter_deploy-model/rest-service.md","mtime":"2019-07-30T17:27:31.738Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-30T17:28:44.542Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-editlink/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
